@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6945914736858355874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6945914736858355873}
+  - component: {fileID: 6945914736858355872}
+  - component: {fileID: 6945914736858355875}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6945914736858355873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945914736858355874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6646434, y: -12.913442, z: -0.47085524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6945914736858355872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945914736858355874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc96b1d2bea4174bbe618a154f0b73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 20
+  rows: 20
+  wallCount:
+    minimum: 35
+    maximum: 40
+  foodCount:
+    minimum: 1
+    maximum: 2
+  exit: {fileID: 928258881041485882, guid: 0a008b5fa757f0440ab99ff70f0f2cfb, type: 3}
+  floorTiles:
+  - {fileID: 222799051565382369, guid: 329101b2b6edcbf4f940762ec6d380a4, type: 3}
+  wallTiles:
+  - {fileID: 3528470559667727479, guid: 0c5a56331399f504ba0e0299084d4264, type: 3}
+  foodTiles:
+  - {fileID: 9143920966251649999, guid: fd4573c76070c4d44805afd69ccf1368, type: 3}
+  enemyTiles:
+  - {fileID: 3763515254735772876, guid: 0575c6336c0d4584eaeccdde8b871b00, type: 3}
+  outerWallTiles:
+  - {fileID: 928258881041485882, guid: 0a008b5fa757f0440ab99ff70f0f2cfb, type: 3}
+  Player: {fileID: 0}
+--- !u!114 &6945914736858355875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945914736858355874}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e5ddc79e6291a43bd84c3df9e97303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 3
